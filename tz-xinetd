@@ -1,4 +1,4 @@
-\# default: on
+# default: on
 # description: The Time Zone Server
 service tz-server
 {
