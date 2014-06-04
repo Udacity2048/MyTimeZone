@@ -1,9 +1,0 @@
-#!/bin/sh
-
-FILE=/tmp/tz-$$
-
-tzselect > $FILE
-sh $FILE
-EXIT_STATUS=$?
-rm -f $FILE
-exit $EXIT_STATUS
