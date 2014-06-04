@@ -1,7 +1,7 @@
 MyTimeZone
 ==========
 
-Project Unix/Linux - PERCCOM Seminar Russia 2014
+Project Unix/Linux - PERCCOM Seminar Russia 2014 - By Baptiste LOUIS
 
 v1.0 : Time Zone application with arg [Continent/City]
 
