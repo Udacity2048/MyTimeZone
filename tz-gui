@@ -1,0 +1,23 @@
+#!/bin/sh
+#!/bin/bash
+
+TAMPON=/tmp/tz-$$
+
+if CONT=$(zenity --entry --title="Time Zone Apps" --text="Continent location:")
+then if CITY=$(zenity --entry --title="Time Zone Apps" --text="City location:" )
+then echo "ok"
+else echo "no text input"
+fi
+else echo "no text input"
+fi
+
+ZONE="$CONT/$CITY"
+echo $ZONE
+
+TZ=$CONT/$CITY 'date' > $TAMPON
+
+
+zenity --info \
+--text="$(cat $TAMPON)"
+
+rm TAMPON
