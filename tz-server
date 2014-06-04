@@ -1,0 +1,7 @@
+#!/bin/sh
+#!/bin/bash
+
+echo "server test ok"
+read ZONE
+TZ=$ZONE date
+

@@ -1,7 +1,8 @@
 #!/bin/sh
 #!/bin/bash
 
-TAMPON=/tmp/tz-$$
+PORT=64000
+SERV="localhost"
 
 if CONT=$(zenity --entry --title="Time Zone Apps" --text="Continent location:")
 then if CITY=$(zenity --entry --title="Time Zone Apps" --text="City location:" )
@@ -12,12 +13,11 @@ else echo "no text input"
 fi
 
 ZONE="$CONT/$CITY"
-echo $ZONE
-
-TZ=$CONT/$CITY 'date' > $TAMPON
+OUT=$(echo ZONE | nc $SERV $PORT)
 
 
 zenity --info \
---text="$(cat $TAMPON)"
+--text="$(cat $OUT)"
 
-rm TAMPON
+rm PORT
+rm SERV
