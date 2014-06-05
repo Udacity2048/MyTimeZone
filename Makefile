@@ -2,6 +2,7 @@ install:
 	install tz-server tz-client /usr/local/bin
 	grep -q "`cat tz-services`" /etc/services || cat tz-services >> /etc/services
 	install tz-xinetd /etc/xinetd.d/tz-server
+	service xinetd restart 
 
 clone:
 	git clone https://github.com/Udacity2048/MyTimeZone
