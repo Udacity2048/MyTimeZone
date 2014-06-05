@@ -5,12 +5,12 @@
 PORT=1234
 SERV="localhost"
 
-if CONT=$(zenity --entry --title `gettext -d tz-client "Time Zone Apps"` --text `gettext -d tz-client "Continent location:"`)
-then if CITY=$(zenity --entry --title `gettext -d tz-client "Time Zone Apps"` --text `gettext -d tz-client "City location:"` )
-then echo `gettext -d tz-client "ok"`
-else echo `gettext -d tz-client "no text input"`
+if CONT=$(zenity --entry --title "Time Zone Apps" --text "Continent location:")
+then if CITY=$(zenity --entry --title "Time Zone Apps" --text "City location:" )
+then echo "ok"
+else echo "no text input"
 fi
-else echo `gettext -d tz-client "no text input"`
+else echo "no text input"
 fi
 
 ZONE="$CONT/$CITY"
