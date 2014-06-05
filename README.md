@@ -12,8 +12,5 @@ v3.0 : Time Zone application with TUI
 v4.0 : Time Zone application with GUI
 
 v5.0 : Time Zone application with client/server communication
-<<<<<<< HEAD
 
 v6.0 : Time Zone application with client/server communication and French translation (test)
-=======
->>>>>>> 3d10954c4596f30c5e45543689c202bf9f278f9a
