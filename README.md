@@ -13,4 +13,4 @@ v4.0 : Time Zone application with GUI
 
 v5.0 : Time Zone application with client/server communication
 
-v6.0 : Time Zone application with client/server communication and French translation (test)
+v6.0 : Time Zone application with client/server communication and French translation
